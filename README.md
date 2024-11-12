@@ -9,8 +9,8 @@ This repository provides a pipeline to detect, segment, and classify bird calls 
 1. **Clone the Repository**
 
 ```bash
-   git clone <repository_url>
-   cd <repository_name>
+   git clone https://github.com/colossal-compsci/few-shot-bird-call.git
+   cd few-shot-bird-call
 ```
 
 2. **Create a Conda Environment**
