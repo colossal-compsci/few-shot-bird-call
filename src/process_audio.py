@@ -1,5 +1,6 @@
 import librosa
-from src.utils import apply_bandpass_filter, match_target_amplitude, reduce_noise  # Import from utils
+#from src.utils import apply_bandpass_filter, match_target_amplitude, reduce_noise  # Import from utils
+from utils import apply_bandpass_filter, match_target_amplitude, reduce_noise  # Import from utils
 
 class AudioProcessor:
     def __init__(self, target_sr=22050, target_dBFS=-20, bandpass_lowcut=150, bandpass_highcut=600):

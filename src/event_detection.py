@@ -1,7 +1,8 @@
 import numpy as np
 import pywt
 import librosa
-from src.process_audio import AudioProcessor  # Import AudioProcessor from process_audio.py
+#from src.process_audio import AudioProcessor  # Import AudioProcessor from process_audio.py
+from process_audio import AudioProcessor  # Import AudioProcessor from process_audio.py
 
 class EventDetection:
     def __init__(self, target_sr=22050, threshold_factor=0.1, min_duration=0.5):
