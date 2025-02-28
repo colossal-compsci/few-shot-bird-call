@@ -82,7 +82,6 @@ def find_csv_file(directory):
             return os.path.join(directory, file)
     return None
 
-
 def save_segment(segment, sr, original_filename, start, end, species, output_dir):
     species_dir = os.path.join(output_dir, species)
     os.makedirs(species_dir, exist_ok=True)
@@ -282,9 +281,9 @@ def process_and_segment_audio(audio, sr, df_file, output_base_path, fmin, fmax, 
             denoised_segment = pad_audio_with_clipping(denoised_segment, segment_length, sr, denoised_audio, start_idx, end_idx)
 
             # Save raw segment
-            #save_segment(original_segment, sr, row['filename'], seg_start, seg_end, species, raw_dir)
-            #save_segment(bandpass_segment, sr, row['filename'], seg_start, seg_end, species, bandpass_dir)
-            #save_segment(denoised_segment, sr, row['filename'], seg_start, seg_end, species, denoised_dir)
+            save_segment(original_segment, sr, row['filename'], seg_start, seg_end, species, raw_dir)
+            save_segment(bandpass_segment, sr, row['filename'], seg_start, seg_end, species, bandpass_dir)
+            save_segment(denoised_segment, sr, row['filename'], seg_start, seg_end, species, denoised_dir)
 
             # add to growing lists 
             original_segments.append(original_segment)

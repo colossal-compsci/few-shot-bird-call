@@ -107,7 +107,6 @@ for species_idx in range(6):
     processed_dir = "/home/leah_colossal_com/us_bird_data/{}/processed/".format(species[species_idx])
     species_label = species[species_idx]
 
-
     # get bandpass limits for this particular species
     bandpass_lower_limit = bp_filters[species_label][0]
     bandpass_upper_limit = bp_filters[species_label][1]
