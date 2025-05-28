@@ -1,0 +1,5 @@
+filepath,filename,event_no,start_time,end_time,Predicted Label,Confidence Score
+./data,test.wav,1,0.62,1.75,species_of_interest,0.91021246
+./data,test.wav,2,3.1,4.52,species_of_interest,0.8873002
+./data,test.wav,3,5.99,7.37,species_of_interest,0.9334563
+./data,test.wav,4,9.01,10.37,species_of_interest,0.9132998
