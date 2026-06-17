@@ -1,4 +1,4 @@
-# Bird Call Detection and Classification
+# Bird Call Detection and Classification [![DOI](https://zenodo.org/badge/1271920537.svg)](https://doi.org/10.5281/zenodo.20726965)
 
 This repository provides a pipeline to detect, segment, and classify bird calls from an audio file. It uses machine learning models to process audio data, generate embeddings, and classify bird calls, producing a `results.csv` file with detailed information for each detected event.
 
