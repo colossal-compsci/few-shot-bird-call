@@ -1,0 +1,25 @@
+# Conservation: never commit tooth-billed pigeon recordings or identifying metadata
+*.wav
+*.WAV
+*.mp3
+*.flac
+*.npy
+*.npz
+*.csv
+*.xlsx
+*.joblib
+data/
+test_files/
+event_segments/
+embeddings/
+model_clean/
+model/
+test_config.json
+# Agent / local tooling
+CLAUDE.md
+.claude/
+**/CLAUDE.md
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
